@@ -56,6 +56,10 @@ main > section > div > table input {
     font-weight: 700;
 }
 
+main > section > div > table button[value="0"] {
+    width: 90%;
+}
+
 main > section > div > table input::placeholder {
     color: #fff;
 }

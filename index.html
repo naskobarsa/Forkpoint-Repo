@@ -4,7 +4,9 @@
   <meta charset="UTF-8">
   <title>Best Calculator by Nac</title>
   <link rel="stylesheet" href="css/style.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
   <script src="js/main.js"></script>
+
 </head>
 <body>
 
@@ -21,30 +23,30 @@
           <tr>
             <td><button id="clearButton" type="button" value="C" onClick="clearAll()">C</button></td>
             <td><button id="clearLastEntry" type="button" value="CE" onClick="clearLastEntry()">CE</button></td>
-            <td><button type="button" value="*"  onClick="inputAdding(this.value)">*</button></td>
-            <td><button type="button" value="/" onClick="inputAdding(this.value)">/</button></td>
+            <td><button class="buttons" type="button" id="myBtn" value="*">*</button></td>
+            <td><button class="buttons" type="button" value="/">/</button></td>
           </tr>
           <tr>
-            <td><button type="button" value="7" onClick="inputAdding(this.value)">7</button></td>
-            <td><button type="button" value="8" onClick="inputAdding(this.value)">8</button></td>
-            <td><button type="button" value="9" onClick="inputAdding(this.value)">9</button></td>
-            <td><button type="button" value="-"  onClick="inputAdding(this.value)">-</button></td>
+            <td><button class="buttons" type="button" value="7" >7</button></td>
+            <td><button class="buttons" type="button" value="8" >8</button></td>
+            <td><button class="buttons" type="button" value="9" >9</button></td>
+            <td><button class="buttons" type="button" value="-" >-</button></td>
           </tr>
           <tr>
-            <td><button type="button" value="4" onClick="inputAdding(this.value)">4</button></td>
-            <td><button type="button" value="5" onClick="inputAdding(this.value)">5</button></td>
-            <td><button type="button" value="6" onClick="inputAdding(this.value)">6</button></td>
-            <td><button type="button" value="+" onClick="inputAdding(this.value)">+</button></td>
+            <td><button class="buttons" type="button" value="4" >4</button></td>
+            <td><button class="buttons" type="button" value="5" >5</button></td>
+            <td><button class="buttons" type="button" value="6" >6</button></td>
+            <td><button class="buttons" type="button" value="+" >+</button></td>
           </tr>
           <tr>
-            <td><button type="button" value="1" onClick="inputAdding(this.value)">1</button></td>
-            <td><button type="button" value="2" onClick="inputAdding(this.value)">2</button></td>
-            <td><button type="button" value="3" onClick="inputAdding(this.value)">3</button></td>
+            <td><button class="buttons" type="button" value="1" >1</button></td>
+            <td><button class="buttons" type="button" value="2" >2</button></td>
+            <td><button class="buttons" type="button" value="3" >3</button></td>
             <td rowspan=2><button type="button" onClick="calculate()" >=</button></td>
           </tr>
           <tr>
-            <td colspan=2><button type="button" style="width:90%" value="0" onClick="inputAdding(this.value)">0</button></td>
-            <td><button type="button" value="." onClick="inputAdding(this.value)">.</button></td>
+            <td colspan=2><button class="buttons" type="button" value="0">0</button></td>
+            <td><button class="buttons" type="button" value=".">.</button></td>
           </tr>
         </table>
       </div>
