@@ -1,0 +1,76 @@
+@import url('https://fonts.googleapis.com/css?family=Kaushan+Script');
+
+body {
+    background: url("../images/bckg.jpg") rgba(168, 248, 211, 0.9);
+    min-height: 100vh;
+    font-family: 'Helvetica Neue', Helvetica,Arial, sans-serif;
+}
+
+button, input {
+    border-radius: 9px;
+    height: 100%;
+    width: 55px;
+}
+
+button {
+    background: #000000ab;
+    color: #f7f3ec;
+    font-size: 22px;
+}
+
+span {
+    font-family: 'Kaushan Script', cursive;
+    font-size: 120%;
+}
+
+main > section > div {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 400px;
+    width: 300px;
+    margin: 20px auto;
+    text-align: center;
+    padding: 10px 5px 50px 5px;
+    border-radius: 25px;
+    background-color: #d2a26391;
+    color: black;
+    -webkit-box-shadow: 2px 4px 15px 4px rgba(0, 0, 0, 0.7);
+    -moz-box-shadow: 2px 4px 15px 4px rgba(0, 0, 0, 0.7);
+    box-shadow: 2px 4px 15px 4px rgba(0, 0, 0, 0.7);
+}
+
+main > section > div > table {
+    height: 100%;
+    width: 100%;
+}
+
+main > section > div > table input {
+    width: 90%;
+    height: 39px;
+    text-align: right;
+    padding-right: 20px;
+    background-color: rgba(0, 91, 134, 0.28);
+    font-size: 130%;
+    color: #fff;
+    font-weight: 700;
+}
+
+main > section > div > table input::placeholder {
+    color: #fff;
+}
+
+main > section > div > table input:focus::-webkit-input-placeholder {
+    opacity: 0;
+}
+
+main > section > div > table input:focus,
+main > section > div > table button:focus {
+    outline: none;
+}
+
+main > section > div > table #clearButton,
+main > section > div > table #clearLastEntry {
+    background: #f11607;
+}
+
